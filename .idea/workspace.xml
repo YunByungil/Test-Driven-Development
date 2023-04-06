@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3ed4a5c-33df-454c-97f9-13d46cc8f68c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrength.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +69,7 @@
       <recent name="development.tdd.chap02" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CalculatorTest.plus">
+  <component name="RunManager" selected="JUnit.PasswordStrengthMeterTest.meetsAllCriteria_Then_Strong">
     <configuration name="CalculatorTest.plus" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -119,6 +124,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PasswordStrengthMeterTest.meetsAllCriteria_Then_Strong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="development.tdd.chap02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="development.tdd.chap02" />
+      <option name="MAIN_CLASS_NAME" value="development.tdd.chap02.PasswordStrengthMeterTest" />
+      <option name="METHOD_NAME" value="meetsAllCriteria_Then_Strong" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TddApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="tdd.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="development.tdd.TddApplication" />
@@ -128,6 +149,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PasswordStrengthMeterTest.meetsAllCriteria_Then_Strong" />
         <item itemvalue="JUnit.CalculatorTest.plus" />
         <item itemvalue="JUnit.CalculatorTest" />
         <item itemvalue="Gradle.CalculatorTest.plus" />
@@ -146,6 +168,9 @@
       <workItem from="1680515108364" duration="2262000" />
       <workItem from="1680517457854" duration="34000" />
       <workItem from="1680517555179" duration="30000" />
+      <workItem from="1680600265709" duration="1920000" />
+      <workItem from="1680742399843" duration="22000" />
+      <workItem from="1680791875682" duration="4272000" />
     </task>
     <servers />
   </component>
