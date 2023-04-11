@@ -184,6 +184,28 @@ public class PasswordStrengthMeter {
     }
 }
 ```
+코드를 수정했으니 테스트를 실행하자.
+### 테스트 실행
+![img_3.png](img_3.png)  
+통과다!  
+  
+앞서 예와 동일하게 길이가 8 미만이고 나머지 조건은 충족하는 암호에 대한 검증 코드를 추가하고 테스트를 실행해보자
+### 검증 코드 추가
+```java
+@DisplayName("길이 8글자 미만, 나머지 조건 충족, 강도는 보통")
+    @Test
+    void meetsOtherCriteria_except_for_Length_Then_Normal() {
+        PasswordStrengthMeter meter = new PasswordStrengthMeter();
+        PasswordStrength result = meter.meter("ab12!@A");
+        assertThat(PasswordStrength.NORMAL).isEqualTo(result);
+        PasswordStrength result2 = meter.meter("Ab12!c");
+        assertThat(PasswordStrength.NORMAL).isEqualTo(result2);
+    }
+```
+![img_4.png](img_4.png)  
+
+
+
 
   
 

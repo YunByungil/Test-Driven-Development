@@ -29,5 +29,7 @@ public class PasswordStrengthMeterTest {
         PasswordStrengthMeter meter = new PasswordStrengthMeter();
         PasswordStrength result = meter.meter("ab12!@A");
         assertThat(PasswordStrength.NORMAL).isEqualTo(result);
+        PasswordStrength result2 = meter.meter("Ab12!c");
+        assertThat(PasswordStrength.NORMAL).isEqualTo(result2);
     }
 }

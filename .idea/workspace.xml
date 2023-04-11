@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3ed4a5c-33df-454c-97f9-13d46cc8f68c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/img_3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/development/tdd/chap02/PasswordStrength.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/development/tdd/chap02/PasswordStrength.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/development/tdd/chap02/PasswordStrengthMeterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/development/tdd/chap02/PasswordStrengthMeterTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/development/tdd/chap02/PasswordStrengthMeter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/development/tdd/chap02/PasswordStrengthMeter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,29 +68,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.PasswordStrengthMeterTest.meetsOtherCriteria_except_for_Length_Then_Normal">
-    <configuration name="CalculatorTest.plus" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;development.tdd.chap02.CalculatorTest.plus&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd.test" />
       <extension name="coverage">
@@ -119,6 +95,21 @@
       <option name="MAIN_CLASS_NAME" value="development.tdd.chap02.CalculatorTest" />
       <option name="METHOD_NAME" value="plus" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordStrengthMeterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="development.tdd.chap02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="development.tdd.chap02" />
+      <option name="MAIN_CLASS_NAME" value="development.tdd.chap02.PasswordStrengthMeterTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -165,10 +156,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PasswordStrengthMeterTest.meetsOtherCriteria_except_for_Length_Then_Normal" />
+        <item itemvalue="JUnit.PasswordStrengthMeterTest" />
         <item itemvalue="JUnit.PasswordStrengthMeterTest.meetsAllCriteria_Then_Strong" />
         <item itemvalue="JUnit.CalculatorTest.plus" />
         <item itemvalue="JUnit.CalculatorTest" />
-        <item itemvalue="Gradle.CalculatorTest.plus" />
       </list>
     </recent_temporary>
   </component>
@@ -191,7 +182,7 @@
       <workItem from="1680885694797" duration="14000" />
       <workItem from="1680890656434" duration="6000" />
       <workItem from="1681203672969" duration="891000" />
-      <workItem from="1681206077942" duration="621000" />
+      <workItem from="1681206077942" duration="946000" />
     </task>
     <servers />
   </component>
@@ -208,6 +199,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeterTest.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
