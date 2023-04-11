@@ -148,7 +148,11 @@ meetsAllCriteria_Then_Strong() 테스트 메서드에 모든 규칙을 충족하
 PasswordStrength 열거 타입에 NORMAL이 없으므로 컴파일 에러가 발생한다.  
 NORMAL을 추가해서 컴파일 에러를 없앤다.  
   
-
+```java
+public enum PasswordStrength {
+    NORMAL, STRONG
+}
+```
 
 
 
