@@ -127,6 +127,29 @@ meetsAllCriteria_Then_Strong() 테스트 메서드에 모든 규칙을 충족하
     }
 ```
 코드를 추가했으니 다시 테스트를 실행한다. 테스트에 통과할 것이다.  
+  
+## 두 번째 테스트: 길이만 8글자 미만이고 나머지 조건은 충족하는 경우
+두 번째 테스트 메서드를 추가하자.  
+  
+이번에 테스트할 대상은 패스워드 문자열의 길이가 8글자 미만이고 나머지 조건을 충족하는 암호이다.  
+  
+이 암호의 강도는 보통이어야 한다.  
+  
+### 두 번째 테스트 코드 작성
+```java
+@DisplayName("길이 8글자 미만, 나머지 조건 충족, 강도는 보통")
+    @Test
+    void meetsOtherCriteria_except_for_Length_Then_Normal() {
+        PasswordStrengthMeter meter = new PasswordStrengthMeter();
+        PasswordStrength result = meter.meter("ab12!@A");
+        assertThat(PasswordStrength.NORMAL).isEqualTo(result);
+    }   
+```
+PasswordStrength 열거 타입에 NORMAL이 없으므로 컴파일 에러가 발생한다.  
+NORMAL을 추가해서 컴파일 에러를 없앤다.  
+  
+
+
 
 
 
