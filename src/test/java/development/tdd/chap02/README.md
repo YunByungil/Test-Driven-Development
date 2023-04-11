@@ -145,14 +145,24 @@ meetsAllCriteria_Then_Strong() 테스트 메서드에 모든 규칙을 충족하
         assertThat(PasswordStrength.NORMAL).isEqualTo(result);
     }   
 ```
+### enum PasswordStrength: 열거 타입 작성  
 PasswordStrength 열거 타입에 NORMAL이 없으므로 컴파일 에러가 발생한다.  
-NORMAL을 추가해서 컴파일 에러를 없앤다.  
-  
+NORMAL을 추가해서 컴파일 에러를 없앤다.
 ```java
 public enum PasswordStrength {
     NORMAL, STRONG
 }
 ```
+### PasswordStrengthMeterTest 실행
+컴파일 에러를 없앤 뒤 PasswordStrengthMeterTest를 실행한다.  
+![img_1.png](img_1.png)  
+새로 추가한 테스트가 실패했다.  
+새로 추가한 테스트를 통과시키는 가장 쉬운 방법은 meter() 메서드가 NORMAL을 리턴하도록 수정하는 것이다.  
+### meter() 메서드 수정
+
+  
+
+
 
 
 
