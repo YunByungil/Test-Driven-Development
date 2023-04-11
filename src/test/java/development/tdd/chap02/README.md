@@ -159,6 +159,31 @@ public enum PasswordStrength {
 새로 추가한 테스트가 실패했다.  
 새로 추가한 테스트를 통과시키는 가장 쉬운 방법은 meter() 메서드가 NORMAL을 리턴하도록 수정하는 것이다.  
 ### meter() 메서드 수정
+```java
+public class PasswordStrengthMeter {
+    public PasswordStrength meter(String s) {
+        return PasswordStrength.NORMAL; // 두 번째 테스트만 통과하게 됨
+    }
+}
+```
+![img_2.png](img_2.png)
+그런데 이렇게 수정하면 앞서 만든 테스트를 통과하지 못한다. (Strong)  
+  
+두 테스트를 모두 통과시킬 수 있는 만큼 코드를 작성해 보자.  
+  
+쉬운 방법은 길이가 8보다 작으면 NORMAL을 리턴하는 코드를 추가하는 것이다.
+  
+### 두 테스트를 통과시키기 위한 코드 추가
+```java
+public class PasswordStrengthMeter {
+    public PasswordStrength meter(String s) {
+        if (s.length() < 8) {
+            return PasswordStrength.NORMAL;
+        }
+        return PasswordStrength.STRONG;
+    }
+}
+```
 
   
 
