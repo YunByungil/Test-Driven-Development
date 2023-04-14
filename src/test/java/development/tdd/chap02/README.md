@@ -205,6 +205,31 @@ public class PasswordStrengthMeter {
 ![img_4.png](img_4.png)  
 통과!  
 
+## 세 번째 테스트: 숫자를 포함하지 않고 나머지 조건을 충족하는 경우
+세 번째 테스트 메서드를 추가하자.  
+이번 테스트 대상은 숫자를 포함하지 않고 나머지 조건은 충족하는 암호이다.  
+  
+이 암호도 보통 강도를 가져야 한다.  
+  
+### 세 번째 테스트 코드 작성
+```java
+@DisplayName("숫자 포함x, 나머지 조건 충족, 강도는 보통")
+@Test
+void meetsOtherCriteria_except_for_number_Then_Normal() {
+    PasswordStrengthMeter meter = new PasswordStrengthMeter();
+    PasswordStrength result = meter.meter("ab!@ABqwer");
+    assertThat(PasswordStrength.NORMAL).isEqualTo(result);
+}
+```
+테스트를 실행하면 새로 추가한 테스트가 실패한 것을 알 수 있다.  
+  
+![img_5.png](img_5.png)  
+  
+이 테스트를 통과하는 방법은 어렵지 않다.  
+암호가 숫자를 포함했는지를 판단해서 포함하지 않은 경우 NORMAL을 리턴하게 구현하면 된다.  
+  
+### 테스트를 통과시키기 위한 코드 추가
+
 
 
 
