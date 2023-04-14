@@ -229,7 +229,28 @@ void meetsOtherCriteria_except_for_number_Then_Normal() {
 암호가 숫자를 포함했는지를 판단해서 포함하지 않은 경우 NORMAL을 리턴하게 구현하면 된다.  
   
 ### 테스트를 통과시키기 위한 코드 추가
-
+```java
+public class PasswordStrengthMeter {
+    public PasswordStrength meter(String s) {
+        if (s.length() < 8) {
+            return PasswordStrength.NORMAL;
+        }
+        // 여기부터 새로 추가함
+        boolean containsNum = false;
+        for (char ch : s.toCharArray()) {
+            if (ch >= '0' && ch <= '9') {
+                containsNum = true;
+                break;
+            }
+        }
+        if (!containsNum) {
+            return PasswordStrength.NORMAL;
+        }
+        //
+        return PasswordStrength.STRONG;
+    }
+}
+```
 
 
 
