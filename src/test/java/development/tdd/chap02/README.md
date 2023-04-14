@@ -305,7 +305,53 @@ void 메서드이름() {
   
 먼저 PasswordStrengthMeter 객체를 생성하는 코드의 중복을 없애보자.  
   
+```java
+private PasswordStrengthMeter meter = new PasswordStrengthMeter();
 
+@DisplayName("암호가 모든 조건을 충족, 강도는 강함")
+@Test
+void meetsAllCriteria_Then_Strong() {
+    PasswordStrength result = meter.meter("ab12!@AB");
+    assertThat(PasswordStrength.STRONG).isEqualTo(result);
+    PasswordStrength result2 = meter.meter("abc1!Add");
+    assertThat(PasswordStrength.STRONG).isEqualTo(result2);
+}
+``` 
+
+암호 강도 측정 기능을 실행하고 이를 확인하는 코드도 중복을 없애보자.   
+  
+```java
+PasswordStrength result = meter.meter(암호);
+assertThat(PasswordStrength.STRONG).isEqualTo(result);
+```
+이런 중복은 메서드를 이용해서 제거할 수 있다.  
+  
+```java
+public class PasswordStrengthMeterTest {
+
+    private PasswordStrengthMeter meter = new PasswordStrengthMeter();
+
+    private void assertStrength(String password, PasswordStrength expStr) {
+      PasswordStrength result = meter.meter(password);
+      assertThat(expStr).isEqualTo(result);
+    }
+  
+    @DisplayName("테스트 메서드 생성")
+    @Test
+    void name() {
+    }
+  
+    @DisplayName("암호가 모든 조건을 충족, 강도는 강함")
+    @Test
+    void meetsAllCriteria_Then_Strong() {
+      assertStrength("ab12!@AB", PasswordStrength.STRONG);
+      assertStrength("abc1!Add", PasswordStrength.STRONG);
+    }
+}
+```
+> 테스트 코드의 중복을 무턱대고 제거하면 안 된다.
+> 중복을 제거한 뒤에도 테스트 코드의 가독성이 떨어지지 않고 수정이 용이한 경우에만 중복을 제거한다.
+> 중복 제거 후 관리가 어려워지면 되돌려야 한다.
 
 
 
