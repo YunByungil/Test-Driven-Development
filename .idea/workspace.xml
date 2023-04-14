@@ -65,7 +65,7 @@
       <recent name="development.tdd.chap02" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PasswordStrengthMeterTest">
+  <component name="RunManager" selected="JUnit.PasswordStrengthMeterTest.nullInput_Then_Invalid">
     <configuration name="PasswordStrengthMeterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd.test" />
       <extension name="coverage">
@@ -77,22 +77,6 @@
       <option name="PACKAGE_NAME" value="development.tdd.chap02" />
       <option name="MAIN_CLASS_NAME" value="development.tdd.chap02.PasswordStrengthMeterTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PasswordStrengthMeterTest.meetsAllCriteria_Then_Strong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tdd.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="development.tdd.chap02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="development.tdd.chap02" />
-      <option name="MAIN_CLASS_NAME" value="development.tdd.chap02.PasswordStrengthMeterTest" />
-      <option name="METHOD_NAME" value="meetsAllCriteria_Then_Strong" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,6 +124,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PasswordStrengthMeterTest.nullInput_Then_Invalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="development.tdd.chap02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="development.tdd.chap02" />
+      <option name="MAIN_CLASS_NAME" value="development.tdd.chap02.PasswordStrengthMeterTest" />
+      <option name="METHOD_NAME" value="nullInput_Then_Invalid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TddApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="tdd.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="development.tdd.TddApplication" />
@@ -149,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PasswordStrengthMeterTest.nullInput_Then_Invalid" />
         <item itemvalue="JUnit.PasswordStrengthMeterTest" />
         <item itemvalue="JUnit.PasswordStrengthMeterTest,name and 1 more" />
         <item itemvalue="JUnit.PasswordStrengthMeterTest.meetsOtherCriteria_except_for_number_Then_Normal" />
         <item itemvalue="JUnit.PasswordStrengthMeterTest.meetsOtherCriteria_except_for_Length_Then_Normal" />
-        <item itemvalue="JUnit.PasswordStrengthMeterTest.meetsAllCriteria_Then_Strong" />
       </list>
     </recent_temporary>
   </component>

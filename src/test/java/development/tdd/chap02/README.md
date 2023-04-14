@@ -383,17 +383,35 @@ public enum PasswordStrength {
     INVALID, NORMAL, STRONG
 }
 ```
+테스트를 실행하면 당연히 실패할 것이다.  
   
+![img_9.png](img_9.png)  
 
-
+### 테스트를 통과시키기 위한 코드 추가
+```java
+public class PasswordStrengthMeter {
+    public PasswordStrength meter(String s) {
+      // 새로 추가한 부분
+      if (s == null) {
+        return PasswordStrength.INVALID;
+      }
+      //
   
-
-
-
-
-
-
-
-
-
+      if (s.length() < 8) {
+        return PasswordStrength.NORMAL;
+      }
+  
+      boolean containsNum = meetsContainingNumberCriteria(s);
+  
+      if (!containsNum) {
+        return PasswordStrength.NORMAL;
+      }
+      return PasswordStrength.STRONG;
+    }
+    
+    ...생략
+}
+```
+구현을 추가했으니 테스트에 통과할 것이다.  
+  
 
