@@ -353,7 +353,32 @@ public class PasswordStrengthMeterTest {
 > 중복을 제거한 뒤에도 테스트 코드의 가독성이 떨어지지 않고 수정이 용이한 경우에만 중복을 제거한다.
 > 중복 제거 후 관리가 어려워지면 되돌려야 한다.
 
-
+## 네 번째 테스트: 값이 없는 경우
+테스트 코드를 작성하는 과정에서 아주 종요한 테스트를 놓쳤다.  
+  
+바로 값이 없는 경우를 테스트하지 않은 것이다.  
+  
+meter() 메서드에 null을 전달하면 NullPointerException이 발생하게 된다.  
+  
+null을 입력할 경우 암호 강도 측정기는 어떻게 반응해야 할까?  
+- IllegalArgumentException 발생한다.
+- 유효하지 않은 암호를 의미하는 PasswordStrength.INVALID를 리턴한다.
+  
+두 번째 방법을 선택해보자.  
+  
+### 네 번째 테스트 코드 작성
+입력이 null인 경우에 대한 테스트 추가
+```java
+@DisplayName("입력이 null인 경우")
+@Test
+void nullInput_Then_Invalid() {
+    assertStrength(null, PasswordStrength.INVALID);
+}
+```
+![img_8.png](img_8.png)
+코드를 추가했다면 PasswordStrength.INVALID에서 컴파일 에러가 발생할 것이다.  
+INVALID를 추가해서 컴파일 에러를 없앤다.  
+  
 
 
   
