@@ -378,6 +378,11 @@ void nullInput_Then_Invalid() {
 ![img_8.png](img_8.png)
 코드를 추가했다면 PasswordStrength.INVALID에서 컴파일 에러가 발생할 것이다.  
 INVALID를 추가해서 컴파일 에러를 없앤다.  
+```java
+public enum PasswordStrength {
+    INVALID, NORMAL, STRONG
+}
+```
   
 
 
