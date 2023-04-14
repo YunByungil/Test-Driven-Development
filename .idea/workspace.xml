@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3ed4a5c-33df-454c-97f9-13d46cc8f68c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/img_6.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/development/tdd/chap02/PasswordStrengthMeter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/development/tdd/chap02/PasswordStrengthMeter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +67,7 @@
       <recent name="development.tdd.chap02" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PasswordStrengthMeterTest.meetsOtherCriteria_except_for_number_Then_Normal">
+  <component name="RunManager" selected="JUnit.PasswordStrengthMeterTest">
     <configuration name="CalculatorTest.plus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd.test" />
       <extension name="coverage">
@@ -155,9 +156,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PasswordStrengthMeterTest" />
         <item itemvalue="JUnit.PasswordStrengthMeterTest.meetsOtherCriteria_except_for_number_Then_Normal" />
         <item itemvalue="JUnit.PasswordStrengthMeterTest.meetsOtherCriteria_except_for_Length_Then_Normal" />
-        <item itemvalue="JUnit.PasswordStrengthMeterTest" />
         <item itemvalue="JUnit.PasswordStrengthMeterTest.meetsAllCriteria_Then_Strong" />
         <item itemvalue="JUnit.CalculatorTest.plus" />
       </list>
@@ -184,7 +185,7 @@
       <workItem from="1681203672969" duration="891000" />
       <workItem from="1681206077942" duration="1573000" />
       <workItem from="1681390406107" duration="6000" />
-      <workItem from="1681476018765" duration="357000" />
+      <workItem from="1681476018765" duration="1154000" />
     </task>
     <servers />
   </component>

@@ -251,6 +251,42 @@ public class PasswordStrengthMeter {
     }
 }
 ```
+각 문자를 비교해서 0 ~ 9 사이의 값을 갖는 문자가 없으면 NORMAL을 리턴하도록 했다.  
+  
+똑같이 따라했으면 모든 테스트가 통과할 것이다.  
+  
+![img_6.png](img_6.png)  
+  
+### 코드 리팩토링
+코드를 조금 리팩토링하자.  
+숫자 포함 여부를 확인하는 코드를 메서드로 추출해서 가독성을 개선하고 메서드 길이도 줄여보자.  
+  
+```java
+public class PasswordStrengthMeter {
+    public PasswordStrength meter(String s) {
+        if (s.length() < 8) {
+            return PasswordStrength.NORMAL;
+        }
+        
+        boolean containsNum = meetsContainingNumberCriteria(s);
+        
+        if (!containsNum) {
+            return PasswordStrength.NORMAL;
+        }
+        return PasswordStrength.STRONG;
+    }
+
+    private boolean meetsContainingNumberCriteria(String s) {
+        for (char ch : s.toCharArray()) {
+            if (ch >= '0' && ch <= '9') {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+```
+
 
 
 
