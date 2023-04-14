@@ -286,6 +286,26 @@ public class PasswordStrengthMeter {
     }
 }
 ```
+테스트 통과!  
+
+![img_7.png](img_7.png)  
+  
+## 코드 정리: 테스트 코드 정리
+세 개의 테스트 메서드를 추가했다. 다음과 같은 형태를 갖는다.
+```java
+@Test
+void 메서드이름() {
+    PasswordStrengthMeter meter = new PasswordStrengthMeter();
+    PasswordStrength result = meter.meter(암호);
+    assertThat(PasswordStrength.STRONG).isEqualTo(result);
+}
+```
+테스트 코드도 코드이기 때문에 유지보수 대상이다.  
+중복을 알맞게 제거하거나 의미가 잘 드러나게 코드를 수정할 필요가 있다.  
+  
+먼저 PasswordStrengthMeter 객체를 생성하는 코드의 중복을 없애보자.  
+  
+
 
 
 

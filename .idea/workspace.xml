@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3ed4a5c-33df-454c-97f9-13d46cc8f68c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/img_7.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/development/tdd/chap02/PasswordStrengthMeter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/development/tdd/chap02/PasswordStrengthMeter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/README.md" afterDir="false" />
@@ -185,7 +185,7 @@
       <workItem from="1681203672969" duration="891000" />
       <workItem from="1681206077942" duration="1573000" />
       <workItem from="1681390406107" duration="6000" />
-      <workItem from="1681476018765" duration="1154000" />
+      <workItem from="1681476018765" duration="2264000" />
     </task>
     <servers />
   </component>
