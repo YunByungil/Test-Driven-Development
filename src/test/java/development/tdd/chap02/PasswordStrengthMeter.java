@@ -17,18 +17,21 @@ public class PasswordStrengthMeter {
             return PasswordStrength.NORMAL;
         }
 
-        boolean containsUpp = false;
-        for (char ch : s.toCharArray()) {
-            if (Character.isUpperCase(ch)) {
-                containsUpp = true;
-                break;
-            }
-        }
+        boolean containsUpp = meetsContainingUppercaseCriteria(s);
         if (!containsUpp) {
             return PasswordStrength.NORMAL;
         }
 
         return PasswordStrength.STRONG;
+    }
+
+    private boolean meetsContainingUppercaseCriteria(String s) {
+        for (char ch : s.toCharArray()) {
+            if (Character.isUpperCase(ch)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private boolean meetsContainingNumberCriteria(String s) {

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3ed4a5c-33df-454c-97f9-13d46cc8f68c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeterTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="c3ed4a5c-33df-454c-97f9-13d46cc8f68c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +62,7 @@
       <recent name="development.tdd.chap02" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PasswordStrengthMeterTest.meetsOtherCriteria_except_for_Uppercase_Then_Normal">
+  <component name="RunManager" selected="JUnit.PasswordStrengthMeterTest">
     <configuration name="PasswordStrengthMeterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd.test" />
       <extension name="coverage">
@@ -149,8 +146,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PasswordStrengthMeterTest.meetsOtherCriteria_except_for_Uppercase_Then_Normal" />
         <item itemvalue="JUnit.PasswordStrengthMeterTest" />
+        <item itemvalue="JUnit.PasswordStrengthMeterTest.meetsOtherCriteria_except_for_Uppercase_Then_Normal" />
         <item itemvalue="JUnit.PasswordStrengthMeterTest.emptyInput_Then_Invalid" />
         <item itemvalue="JUnit.PasswordStrengthMeterTest.nullInput_Then_Invalid" />
         <item itemvalue="JUnit.PasswordStrengthMeterTest,name and 1 more" />
@@ -180,7 +177,7 @@
       <workItem from="1681390406107" duration="6000" />
       <workItem from="1681476018765" duration="2264000" />
       <workItem from="1681514873636" duration="3650000" />
-      <workItem from="1681563644354" duration="795000" />
+      <workItem from="1681563644354" duration="1154000" />
     </task>
     <servers />
   </component>
