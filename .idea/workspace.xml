@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3ed4a5c-33df-454c-97f9-13d46cc8f68c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="c3ed4a5c-33df-454c-97f9-13d46cc8f68c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,6 +94,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PasswordStrengthMeterTest.meetsOnlyLengthCriteria_Then_Weak" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="development.tdd.chap02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="development.tdd.chap02" />
+      <option name="MAIN_CLASS_NAME" value="development.tdd.chap02.PasswordStrengthMeterTest" />
+      <option name="METHOD_NAME" value="meetsOnlyLengthCriteria_Then_Weak" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PasswordStrengthMeterTest.meetsOtherCriteria_except_for_Uppercase_Then_Normal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd.test" />
       <extension name="coverage">
@@ -109,17 +122,6 @@
       <option name="MAIN_CLASS_NAME" value="development.tdd.chap02.PasswordStrengthMeterTest" />
       <option name="METHOD_NAME" value="meetsOtherCriteria_except_for_Uppercase_Then_Normal" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PasswordStrengthMeterTest,name and 1 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tdd.test" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="development.tdd.chap02.PasswordStrengthMeterTest,name" />
-        <pattern testClass="development.tdd.chap02.PasswordStrengthMeterTest,meetsAllCriteria_Then_Strong" />
-      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,10 +152,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PasswordStrengthMeterTest" />
+        <item itemvalue="JUnit.PasswordStrengthMeterTest.meetsOnlyLengthCriteria_Then_Weak" />
         <item itemvalue="JUnit.PasswordStrengthMeterTest.meetsOtherCriteria_except_for_Uppercase_Then_Normal" />
         <item itemvalue="JUnit.PasswordStrengthMeterTest.emptyInput_Then_Invalid" />
         <item itemvalue="JUnit.PasswordStrengthMeterTest.nullInput_Then_Invalid" />
-        <item itemvalue="JUnit.PasswordStrengthMeterTest,name and 1 more" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +182,7 @@
       <workItem from="1681390406107" duration="6000" />
       <workItem from="1681476018765" duration="2264000" />
       <workItem from="1681514873636" duration="3650000" />
-      <workItem from="1681563644354" duration="2065000" />
+      <workItem from="1681563644354" duration="2602000" />
     </task>
     <servers />
   </component>
@@ -200,6 +202,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="입력이 빈 문자열일 때 PasswordStrengthMeter에 예외 로직 추가" />
+    <MESSAGE value="여섯 번째 테스트: 길이가 8글자 이상인 조건만 충족하는 테스트 코드 작성" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
