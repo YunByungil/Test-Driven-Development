@@ -445,5 +445,19 @@ public PasswordStrength meter(String s){
 ```
 ![img_12.png](img_12.png)  
 
-테스트 완료!
+테스트 완료!  
+  
+## 다섯 번째 테스트: 대문자를 포함하지 않고 나머지 조건을 충족하는 경우
+  
+### 다섯 번째 테스트 코드 작성
+```java
+@DisplayName("대문자를 포함하지 않고 나머지 조건은 충족하는 경우")
+@Test
+void meetsOtherCriteria_except_for_Uppercase_Then_Normal() {
+    assertStrength("ab12!@df", PasswordStrength.NORMAL);
+}
+```
+실행하면 실패할 것이다. 실패한 코드를 통과시킬 차례다.  
+  
+
 
