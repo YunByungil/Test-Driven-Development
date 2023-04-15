@@ -9,18 +9,15 @@ public class PasswordStrengthMeter {
 
         int metCount = 0;
 
-        boolean lengthEnough = s.length() >= 8;
-        if (lengthEnough) {
+        if (s.length() >= 8) {
             metCount++;
         }
 
-        boolean containsNum = meetsContainingNumberCriteria(s);
-        if (containsNum) {
+        if (meetsContainingNumberCriteria(s)) {
             metCount++;
         }
 
-        boolean containsUpp = meetsContainingUppercaseCriteria(s);
-        if (containsUpp) {
+        if (meetsContainingUppercaseCriteria(s)) {
             metCount++;
         }
 
