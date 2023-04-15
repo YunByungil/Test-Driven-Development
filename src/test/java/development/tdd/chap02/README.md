@@ -433,5 +433,14 @@ void emptyInput_Then_Invalid() {
   
 이 테스트를 통과시키기 위해 PasswordStrengthMeter 클래스의 코드를 수정한다.  
   
+```java
+public PasswordStrength meter(String s){
 
+    if(s==null||s.isEmpty()){
+        return PasswordStrength.INVALID;
+    }
+  
+    ...생략
+}
+```
 
