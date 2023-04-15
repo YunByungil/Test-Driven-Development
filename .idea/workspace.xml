@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3ed4a5c-33df-454c-97f9-13d46cc8f68c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +184,7 @@
       <workItem from="1681390406107" duration="6000" />
       <workItem from="1681476018765" duration="2264000" />
       <workItem from="1681514873636" duration="3650000" />
-      <workItem from="1681563644354" duration="3407000" />
+      <workItem from="1681563644354" duration="3749000" />
     </task>
     <servers />
   </component>
@@ -205,6 +205,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="입력이 빈 문자열일 때 PasswordStrengthMeter에 예외 로직 추가" />
     <MESSAGE value="여섯 번째 테스트: 길이가 8글자 이상인 조건만 충족하는 테스트 코드 작성" />
+    <MESSAGE value="meter() 메서드 리팩토링, 두 조건만 충족하는 경우 리팩토링 완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
