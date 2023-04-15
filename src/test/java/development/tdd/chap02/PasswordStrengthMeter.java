@@ -27,18 +27,10 @@ public class PasswordStrengthMeter {
         if (metCount == 1) {
             return PasswordStrength.WEAK;
         }
-
-        if (!lengthEnough) {
+        if (metCount == 2) {
             return PasswordStrength.NORMAL;
         }
 
-        if (!containsNum) {
-            return PasswordStrength.NORMAL;
-        }
-
-        if (!containsUpp) {
-            return PasswordStrength.NORMAL;
-        }
 
         return PasswordStrength.STRONG;
     }
