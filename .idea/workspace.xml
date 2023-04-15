@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3ed4a5c-33df-454c-97f9-13d46cc8f68c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/development/tdd/chap02/PasswordStrengthMeter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +184,7 @@
       <workItem from="1681390406107" duration="6000" />
       <workItem from="1681476018765" duration="2264000" />
       <workItem from="1681514873636" duration="3650000" />
-      <workItem from="1681563644354" duration="3021000" />
+      <workItem from="1681563644354" duration="3407000" />
     </task>
     <servers />
   </component>
