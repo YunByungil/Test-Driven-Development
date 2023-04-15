@@ -47,4 +47,10 @@ public class PasswordStrengthMeterTest {
     void nullInput_Then_Invalid() {
         assertStrength(null, PasswordStrength.INVALID);
     }
+
+    @DisplayName("입력이 빈 문자열인 경우")
+    @Test
+    void emptyInput_Then_Invalid() {
+        assertStrength("", PasswordStrength.INVALID);
+    }
 }

@@ -414,4 +414,24 @@ public class PasswordStrengthMeter {
 ```
 구현을 추가했으니 테스트에 통과할 것이다.  
   
+![img_10.png](img_10.png)  
+  
+예외 상황이 null만 있는 것은 아니다.  
+빈 문자열도 예외 상황이다. 빈 문자열에 대한 테스트도 추가한다.  
+  
+```java
+@DisplayName("입력이 빈 문자열인 경우")
+@Test
+void emptyInput_Then_Invalid() {
+    assertStrength("", PasswordStrength.INVALID);    
+}
+```
+테스트에 실패할 것이다.  
+실패 결과를 보면 기대한 값 INVALID, 실제 결과 NORMAL  
+  
+![img_11.png](img_11.png)  
+  
+이 테스트를 통과시키기 위해 PasswordStrengthMeter 클래스의 코드를 수정한다.  
+  
+
 
