@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
+import static org.assertj.core.api.Assertions.*;
+
 public class ExpiryDateCalculatorTest {
     /*
     매달 비용을 지불해야 사용할 수 있는 유료 서비스
@@ -27,6 +29,15 @@ public class ExpiryDateCalculatorTest {
         ExpiryDateCalculator cal = new ExpiryDateCalculator();
         LocalDate expiryDate = cal.calculateExpiryDate(billingDate, payAmount);
 
-        Assertions.assertThat(LocalDate.of(2019, 4, 1)).isEqualTo(expiryDate);
+        assertThat(LocalDate.of(2019, 4, 1)).isEqualTo(expiryDate);
+
+        // 동일 상황에 해당하는 테스트 예를 추가
+        LocalDate billingDate2 = LocalDate.of(2019, 5, 5);
+        int payAmount2 = 10_000;
+
+        ExpiryDateCalculator cal2 = new ExpiryDateCalculator();
+        LocalDate expiryDate2 = cal2.calculateExpiryDate(billingDate2, payAmount2);
+
+        assertThat(LocalDate.of(2019, 6, 5)).isEqualTo(expiryDate2);
     }
 }
