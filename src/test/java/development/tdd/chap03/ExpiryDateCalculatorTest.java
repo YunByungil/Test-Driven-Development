@@ -63,9 +63,9 @@ public class ExpiryDateCalculatorTest {
         );
     }
 
-    private void assertExpiryDate(LocalDate billingDate, int payAmount, LocalDate expectedExpiryDate) {
+    private void assertExpiryDate(PayData payData, LocalDate expectedExpiryDate) {
         ExpiryDateCalculator cal = new ExpiryDateCalculator();
-        LocalDate realExpiryDate = cal.calculateExpiryDate(billingDate, payAmount);
+        LocalDate realExpiryDate = cal.calculateExpiryDate(payData);
 
         assertThat(expectedExpiryDate).isEqualTo(realExpiryDate);
     }
