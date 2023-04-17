@@ -49,6 +49,18 @@ public class ExpiryDateCalculatorTest {
                 10_000,
                 LocalDate.of(2019, 2, 28)
         );
+
+        assertExpiryDate(
+                LocalDate.of(2019, 5, 31),
+                10_000,
+                LocalDate.of(2019, 6, 30)
+        );
+
+        assertExpiryDate(
+                LocalDate.of(2020, 1, 31),
+                10_000,
+                LocalDate.of(2020, 2, 29)
+        );
     }
 
     private void assertExpiryDate(LocalDate billingDate, int payAmount, LocalDate expectedExpiryDate) {
