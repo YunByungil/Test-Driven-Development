@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 public class ExpiryDateCalculator {
     public LocalDate calculateExpiryDate(PayData payData) {
+        int addedMonths = 1;
         if (payData.getFirstBillingDate() != null) {
             // 첫 납부일과 이후 납부일의 일자가 다른 경우를 처리하기 위한 코드
 
@@ -13,6 +14,6 @@ public class ExpiryDateCalculator {
             }
         }
 
-        return payData.getBillingDate().plusMonths(1);
+        return payData.getBillingDate().plusMonths(addedMonths);
     }
 }
