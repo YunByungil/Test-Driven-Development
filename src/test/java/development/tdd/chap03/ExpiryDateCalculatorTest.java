@@ -73,6 +73,29 @@ public class ExpiryDateCalculatorTest {
         );
     }
 
+    /*
+    다음 테스트 선택: 다시 예외 상황
+    - 2만 원을 지불하면 만료일이 두 달 뒤가 된다.
+    - 3만 원을 지불하면 만료일이 세 달 뒤가 된다.
+
+    - 첫 납부일이 2019-01-31이고 만료되는 2019-02-28에 1만 원을 납부하면 다음 만료일은 2019-03-31이다.
+    - 첫 납부일이 2019-01-30이고 만료되는 2019-02-28에 1만 원을 납부하면 다음 만료일은 2019-03-30이다.
+    - 첫 납부일이 2019-05-31이고 만료되는 2019-06-30에 1만 원을 납부하면 다음 만료일은 2019-07-31이다.
+     */
+    @DisplayName("첫 납부일 일자와 만료일 납부일 일자가 같지 않을 때 만료일 계산 테스트")
+    @Test
+    void 첫_납부일과_만료일_일자가_다를때_만원_납부() {
+        PayData payData = PayData.builder()
+                .firstBillingDate(LocalDate.of(2019, 1, 31))
+                .billingDate(LocalDate.of(2019, 2, 28))
+                .payAmount(10_000)
+                .build();
+
+        assertExpiryDate(payData, LocalDate.of(2019, 3, 31));
+    }
+
+
+
     private void assertExpiryDate(PayData payData, LocalDate expectedExpiryDate) {
         ExpiryDateCalculator cal = new ExpiryDateCalculator();
         LocalDate realExpiryDate = cal.calculateExpiryDate(payData);
