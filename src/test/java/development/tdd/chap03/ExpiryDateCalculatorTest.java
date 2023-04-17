@@ -126,6 +126,15 @@ public class ExpiryDateCalculatorTest {
                 .build();
 
         assertExpiryDate(payData, LocalDate.of(2019, 5, 1));
+
+        // 3만 원을 납부하는 사례 추가
+        assertExpiryDate(
+                PayData.builder()
+                        .billingDate(LocalDate.of(2019, 3, 1))
+                        .payAmount(30_000)
+                        .build(),
+                LocalDate.of(2019, 6, 1)
+        );
     }
 
     private void assertExpiryDate(PayData payData, LocalDate expectedExpiryDate) {
