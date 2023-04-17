@@ -92,9 +92,16 @@ public class ExpiryDateCalculatorTest {
                 .build();
 
         assertExpiryDate(payData, LocalDate.of(2019, 3, 31));
+
+        // 첫 납부일이 2019-01-30이고 만료되는 2019-02-28에 1만 원을 납부하면 다음 만료일은 2019-03-30이다.
+        PayData payData2 = PayData.builder()
+                .firstBillingDate(LocalDate.of(2019, 1, 30))
+                .billingDate(LocalDate.of(2019, 2, 28))
+                .payAmount(10_000)
+                .build();
+
+        assertExpiryDate(payData2, LocalDate.of(2019, 3, 30));
     }
-
-
 
     private void assertExpiryDate(PayData payData, LocalDate expectedExpiryDate) {
         ExpiryDateCalculator cal = new ExpiryDateCalculator();
