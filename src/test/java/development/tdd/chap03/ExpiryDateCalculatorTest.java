@@ -153,6 +153,22 @@ public class ExpiryDateCalculatorTest {
                 LocalDate.of(2019, 4, 30)
         );
     }
+    
+    /*
+    10개월 요금을 납부하면 1년 제공
+     */
+    @DisplayName("10만 원을 납부하면 1년 서비스를 제공하는 테스트")
+    @Test
+    void 십만원을_납부하면_1년_제공() {
+        assertExpiryDate(
+            PayData.builder()
+                    .billingDate(LocalDate.of(2019, 1, 28))
+                    .payAmount(100_000)
+                    .build(),
+            LocalDate.of(2020, 1, 28)
+        );
+        // 2019년 1월 28일에 10만 원을 납부하면 2020년 1월 28일이어야 하는데 2019년 11월 28일을 만료일로 계산해서 테스트 실패
+    }
 
     private void assertExpiryDate(PayData payData, LocalDate expectedExpiryDate) {
         ExpiryDateCalculator cal = new ExpiryDateCalculator();
