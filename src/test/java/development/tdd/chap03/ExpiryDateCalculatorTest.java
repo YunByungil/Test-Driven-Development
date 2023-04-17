@@ -35,6 +35,22 @@ public class ExpiryDateCalculatorTest {
                 LocalDate.of(2019, 6, 5));
     }
 
+    /*
+    예외 상황 처리, 단순히 한 달 추가로 끝나지 않는 상황이 존재한다.
+    - 납부일이 2019-01-31이고 납부액이 1만 원이면 만료일은 2019-02-28이다.
+    - 납부일이 2019-05-31이고 납부액이 1만 원이면 만료일은 2019-06-30이다.
+    - 납부일이 2020-01-31이고 납부액이 1만 원이면 만료일은 2020-02-29이다.
+     */
+    @DisplayName("납부일과_한달_뒤_일자가_같지_않음")
+    @Test
+    void 납부일과_한달_뒤_일자가_같지_않음() {
+        assertExpiryDate(
+                LocalDate.of(2019, 1, 31),
+                10_000,
+                LocalDate.of(2019, 2, 28)
+        );
+    }
+
     private void assertExpiryDate(LocalDate billingDate, int payAmount, LocalDate expectedExpiryDate) {
         ExpiryDateCalculator cal = new ExpiryDateCalculator();
         LocalDate realExpiryDate = cal.calculateExpiryDate(billingDate, payAmount);
