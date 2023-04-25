@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
+import org.mockito.Mockito;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.mockito.BDDMockito.given;
@@ -27,7 +28,11 @@ public class UserRegisterMockTest {
     @DisplayName("약한 암호면 가입 실패")
     @Test
     void weakPassword() {
-        given(mockPasswordChecker.checkPasswordWeak("pw")).willReturn(true);
+        /*
+        정확하게 일치하는 값으로 모의 객체 설정하지 않기
+        "pw" -> Mockito.anyString()
+         */
+        given(mockPasswordChecker.checkPasswordWeak(Mockito.anyString())).willReturn(true);
 
         assertThatThrownBy(() -> {
             userRegister.register("id", "pw", "email");
